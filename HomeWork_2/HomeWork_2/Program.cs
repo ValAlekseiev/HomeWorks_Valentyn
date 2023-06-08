@@ -1,0 +1,12 @@
+﻿int val = 12345;
+int v1 = val / 10000;
+Console.WriteLine(v1);
+int v2 = val / 1000 - v1 * 10;
+Console.WriteLine(v2);
+int v3 = val /100 - (v1 * 100 + v2 *10);
+Console.WriteLine(v3);
+int v4 = val / 10 - (v1 * 1000 + v2 * 100 + v3 * 10);
+Console.WriteLine(v4);
+int v5 = val - (v1 * 10000 + v2 * 1000 + v3 * 100 + v4 * 10);
+Console.WriteLine(v5);
+Console.ReadLine();
